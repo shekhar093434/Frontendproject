@@ -1,0 +1,23 @@
+<!-- Chatbot -->
+
+<button [style.background-color]="togglecolor ? '#4CAF50' : 'red'" class="open-button" (click)="toggle()" id="bt">
+  {{buttonName}}
+</button>
+
+<div class="form-container" *ngIf="show">
+  <form>
+    <h1>Chat</h1>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+</div>
+
+<!-- Footer -->
+
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; 2020</p>
+  </div>
+</footer>
